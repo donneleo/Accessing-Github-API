@@ -19,7 +19,7 @@ def getNumberCommits(newURL):
     data = s.json()
     for each in data:
         print("Date/Time:", each["commit"]["author"]["date"], "What was Changed:", each["commit"]["message"])
-    print("\n", " have been made to this repository.")
+
 
 URL = ("https://api.github.com/users/donneleo/repos")
 getAPI(URL)
